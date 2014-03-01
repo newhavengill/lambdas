@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+cp=.
+
+if [ -a ./pom.xml ]; then
+  cp=.:$(mvnsavecp)
+fi
+
+export CLASSPATH=$cp:~/java_classes
+
+java LamdaTest

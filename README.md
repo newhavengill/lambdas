@@ -13,7 +13,7 @@ if replacing your system jdk/jvm with 1.8 isn't your thing, try vagrant!
 
 I've included a sample Vagrant file and provisioning script that downloads an ubuntu 13.10 vm from <http://cloud-images.ubuntu.com> and installs maven, jdk1.8, builds this project and runs src/js/test.js
 
-If you prefer to manually setup your ubuntu vm/box feel free to hack the provision_nashorn_vagrant.sh script and make it work. I've included the basics here if don't like figuring out shell scripts. Oh, and osx fans - you're on your own.
+If you prefer to manually setup your ubuntu vm/box feel free to hack the provision_lambdas_vagrant.sh script and make it work. I've included the basics here if don't like figuring out shell scripts. Oh, and osx fans - you're on your own.
 
 first(!) install maven if it is not installed, 
 

@@ -36,10 +36,10 @@ git clone https://github.com/newhavengill/lambdas.git
 
 #build it
 cd lambdas
-# mvn clean install
+mvn clean
 
 #copy to user bin folder
-#cp src/bash/* /home/vagrant/bin/.
+cp src/bash/* /home/vagrant/bin/.
 
 #add src/bash to path is user bin is not in path
 if [ "$(command -v nashorn)" = "" ]; then export PATH="/home/vagrant/projects/lambdas/src/bash:$PATH"; fi 
