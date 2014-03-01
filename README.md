@@ -1,4 +1,4 @@
-nashorn-mvn
+lambdas
 ============
 
 prereqs - maven, jdk8, on ubuntu or osx.  
