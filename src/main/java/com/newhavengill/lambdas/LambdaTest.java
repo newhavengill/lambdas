@@ -1,3 +1,5 @@
+package com.newhavengill.lambdas;
+
 public class LambdaTest {
 
         public static void main(String[] args){
