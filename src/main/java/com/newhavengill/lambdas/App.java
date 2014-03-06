@@ -28,21 +28,15 @@ public class App {
 			}
 		});		*/
 	
-		/* Lambdas Pattern 3 lines
+		/* Lambdas Pattern 3 lines */
 		Processor.process(WineMessage.class, (WineMessage message) -> {
 			return message.getWine();
 		});
-		*/
+		
 		/*  Type Inference 1 line
 		Processor.process(WineMessage.class, (WineMessage message) -> message.getWine());
 		*/
-		/*  Type Inference 1 line
-		Processor.process(WineMessage.class, (WineMessage message,-> message.getWine());
-		*/
-		/*  Method Handles
-		Processor.process(WineMessage.class, (WineMessage message, WineMessage::getWine);
-		*/	
-		
+
 		/* Lamdba way to bring in Vineyard Message Handler 
 		Handler<Vineyard, VineyardMessage> handler = VineyardMessage::getVineyard;
 		Processor.process(VineyardMessage.class,handler);	
