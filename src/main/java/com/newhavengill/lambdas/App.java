@@ -20,27 +20,28 @@ public class App {
 			}
 		});
 		
-		/* Old Way.  Repeat for Handler for Vineyard Message 
+		/* Old Way.  Repeat for Handler for Vineyard Message */
 		Processor.process(VineyardMessage.class, new Handler<Vineyard, VineyardMessage>()
 			@Override
 			public Vineyard handle(VineyardMessage message) {
 				return message.getWine();
 			}
-		});		*/
+		});	
+		
 	
 		/* Lambdas Pattern 3 lines */
 		Processor.process(WineMessage.class, (WineMessage message) -> {
 			return message.getWine();
 		});
 		
-		/*  Type Inference 1 line
+		/*  Type Inference 1 line */
 		Processor.process(WineMessage.class, (WineMessage message) -> message.getWine());
-		*/
+		
 
-		/* Lamdba way to bring in Vineyard Message Handler 
+		/* Lamdba way to bring in Vineyard Message Handler*/
 		Handler<Vineyard, VineyardMessage> handler = VineyardMessage::getVineyard;
 		Processor.process(VineyardMessage.class,handler);	
-		*/
+		
 	}
 
 }
